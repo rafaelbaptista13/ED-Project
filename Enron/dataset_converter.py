@@ -60,7 +60,7 @@ with open('enron_dataset.csv', 'w') as eron_dataset:
         sequence = False
         number_of_sequences = 0
         uninterruped_chars = 0
-        for char in row:
+        for char in row.replace(" ", ""):
             if char.isupper():
                 uninterruped_chars += 1
                 sequence = True
@@ -81,7 +81,7 @@ with open('enron_dataset.csv', 'w') as eron_dataset:
         # Length of longest uninterrupted sequence of capital letters
         uninterruped_chars = 0
         longest_uninterruped_sequence = 0
-        for char in row:
+        for char in row.replace(" ", ""):
             if char.isupper():
                 uninterruped_chars += 1
             else:
