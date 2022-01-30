@@ -1,3 +1,9 @@
+#
+#   Work performed by:
+#       - Diogo Carvalho 92969
+#       - Gil Viegas 99576
+#       - Rafael Baptista 93367
+#
 import csv
 import re
 
